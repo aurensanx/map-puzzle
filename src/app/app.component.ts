@@ -20,6 +20,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.currentArea = this.areaService.initMap(map);
+    this.areaService.initMap(map);
   }
 }

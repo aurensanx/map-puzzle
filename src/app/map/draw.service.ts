@@ -9,7 +9,7 @@ import {AreaService} from '../area.service';
 export class DrawService {
 
   private readonly drawData;
-  private readonly onClick;
+  private readonly onClick: (d: JSONMap) => void;
 
   getDrawData() {
     return this.drawData;
@@ -21,6 +21,7 @@ export class DrawService {
       const clickedArea = d3.select(`path#${d.id}`);
       if (areaService.currentMapArea.id === d.id) {
         clickedArea.style('fill', 'green');
+        areaService.removeClickedArea(d);
       } else {
         clickedArea.style('fill', 'red');
         clickedArea.transition().delay(1000).transition().style('fill', 'white');
