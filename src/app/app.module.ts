@@ -1,18 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { SpainComponent } from './maps/spain/spain.component';
+import {AppComponent} from './app.component';
+import {MapComponent} from './map/map.component';
+import {AreaService} from './area.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SpainComponent
+    MapComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AreaService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
