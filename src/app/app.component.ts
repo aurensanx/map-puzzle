@@ -1,6 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import map from './maps/usa.json';
-import {JSONMap} from './map/map';
+import map from './maps/usa_test.json';
 import {AreaService} from './area.service';
 
 
@@ -12,7 +11,6 @@ import {AreaService} from './area.service';
 })
 export class AppComponent implements OnInit {
   title = 'spain';
-  currentArea: JSONMap;
   map = map;
 
   constructor(private areaService: AreaService) {

@@ -1,6 +1,7 @@
 <div class="container">
   <div class="content">
-    <div class="title">{{areaService.currentMapArea.n}}</div>
+    <div *ngIf="areaService.map.length > 0" class="title">{{areaService.currentMapArea.n}}</div>
+    <div *ngIf="areaService.map.length === 0" class="title">Felicidades!!!</div>
     <app-map [dataPath]="map"></app-map>
   </div>
 

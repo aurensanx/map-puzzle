@@ -16,7 +16,7 @@ export class AreaService {
   }
 
   getRandomArea: () => void = () => {
-    this.currentMapArea = this.map[Math.floor(Math.random() * (this.map.length - 1))];
+    this.currentMapArea = this.map[Math.floor(Math.random() * (this.map.length))];
   }
 
   removeClickedArea: (d: JSONMap) => void = d => {
