@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import map from './maps/usa_test.json';
+import map from './maps/usa.json';
 import {AreaService} from './area.service';
 
 
