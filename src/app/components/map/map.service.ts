@@ -37,8 +37,10 @@ export class MapService {
         this.removeClickedArea(d);
       } else {
         // FIXME with css
-        clickedArea.style('fill', 'red');
-        clickedArea.transition().delay(1000).transition().style('fill', 'white');
+        clickedArea.classed("wrong", true);
+        setTimeout(() => {
+          clickedArea.classed("wrong", false);
+        }, 1000);
       }
       this.getRandomArea();
     }

@@ -13,6 +13,7 @@
 
 .map-area {
   fill: white;
+  //transition: fill 2s ease-out;
   stroke: #a9a9a9;
   stroke-width: 1;
 
@@ -27,7 +28,6 @@
   }
 
   &.wrong {
-    transition: fill 2s ease;
     fill: red;
   }
 }
