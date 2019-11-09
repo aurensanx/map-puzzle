@@ -1,11 +1,5 @@
 <!--<div class="container">-->
-<!--  <div class="content">-->
-<!--    <h1 *ngIf="areaService.features.length > 0" class="title">{{areaService.currentFeature.properties.provincia}}</h1>-->
-<!--    <h1 *ngIf="areaService.map.length === 0" class="title">Felicidades!!!</h1>-->
-<!--<app-geo-map [map]="map"></app-geo-map>-->
-<!--<app-svg-map [dataPath]="map"></app-svg-map>-->
-<!--  </div>-->
+  <svg id="rootSVG" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet"></svg>
 <!--</div>-->
 
 
-<div id="rootSVG" [inlineSVG]="'/assets/maps/' + map + '.svg'"></div>
