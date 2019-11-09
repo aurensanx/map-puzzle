@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
-import {GeoJSON} from "geojson";
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  styleUrls: ['./map.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class MapComponent implements OnInit {
 
@@ -17,9 +17,10 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(({params}: any) => {
-      this.httpClient.get(`assets/maps/${params.id}.json`).subscribe((data: any) => {
-        this.map = data;
-      });
+      this.map = params.id;
+      // this.httpClient.get(`assets/maps/${params.id}.json`).subscribe((data: any) => {
+      //   this.map = data;
+      // });
     });
   }
 

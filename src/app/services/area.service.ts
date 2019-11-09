@@ -1,16 +1,16 @@
 import {Injectable} from '@angular/core';
-import {JSONMap} from '../map/map';
 import * as _ from 'lodash';
+import {AreaModel} from '../components/map/model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AreaService {
 
-  map: JSONMap[];
-  currentMapArea: JSONMap;
+  map: AreaModel[];
+  currentMapArea: AreaModel;
 
-  initMap: (map: JSONMap[]) => void = map => {
+  initMap: (map: AreaModel[]) => void = map => {
     this.map = map;
     this.getRandomArea();
   }
@@ -19,7 +19,7 @@ export class AreaService {
     this.currentMapArea = this.map[Math.floor(Math.random() * (this.map.length))];
   }
 
-  removeClickedArea: (d: JSONMap) => void = d => {
+  removeClickedArea: (d: AreaModel) => void = d => {
     _.remove(this.map, a => a.id === d.id);
   }
 
