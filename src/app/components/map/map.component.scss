@@ -1,25 +1,34 @@
-//.container {
-//  display: flex;
-//  align-items: flex-end;
-//  justify-content: center;
-//  width: 100%;
-//  height: 100%;
-//}
-
 #rootSVG {
-    width: 100%;
-    height: 100%;
+  height: 80%;
 }
 
-.land {
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.map-area {
   fill: white;
   stroke: #a9a9a9;
   stroke-width: 1;
 
-  &:hover {
+  &:hover:not(.correct):not(.wrong) {
     fill: orange;
     fill-opacity: 0.5;
     cursor: pointer;
+  }
+
+  &.correct {
+    fill: green;
+  }
+
+  &.wrong {
+    transition: fill 2s ease;
+    fill: red;
   }
 }
 

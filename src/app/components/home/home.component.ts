@@ -8,11 +8,11 @@ interface MenuItem {
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
 
-  maps: MenuItem[] = [{name: 'USA', id: 'usa'}, {name: 'Spain', id: 'spain'}];
+  maps: MenuItem[] = [{name: 'USA', id: 'usa'}, {name: 'España', id: 'spain'}];
 
   constructor() {
   }

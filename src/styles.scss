@@ -5,15 +5,19 @@ html, body {
   padding: 0;
 }
 
+* {
+  color: white;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   background-image: url('./assets/images/bg.png');
+  color: white;
 }
 
 a {
-  color: white;
   text-decoration: none; /* no underline */
 }
 
