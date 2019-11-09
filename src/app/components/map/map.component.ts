@@ -18,9 +18,6 @@ export class MapComponent implements OnInit {
   ngOnInit() {
     this.route.paramMap.subscribe(({params}: any) => {
       this.map = params.id;
-      // this.httpClient.get(`assets/maps/${params.id}.json`).subscribe((data: any) => {
-      //   this.map = data;
-      // });
     });
   }
 
