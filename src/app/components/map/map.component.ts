@@ -13,12 +13,12 @@ export class MapComponent implements OnInit {
 
   map: any;
 
-  constructor(private route: ActivatedRoute, private mapService: MapService, private httpClient: HttpClient) {
+  constructor(private route: ActivatedRoute, public mapService: MapService, private httpClient: HttpClient) {
   }
 
   ngOnInit() {
     this.route.paramMap.subscribe(({params}: any) => {
-      this.httpClient.get(`assets/maps/${params.id}.json`).subscribe((data: any) => {
+      this.httpClient.get(`./assets/maps/${params.id}.json`).subscribe((data: any) => {
         this.mapService.draw('#rootSVG', data);
       });
 
