@@ -8,9 +8,16 @@ html, body {
 body {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+  background-image: url('./assets/images/bg.png');
 }
 
-app-root {
-  display: block;
-  height: 100%;
+a {
+  color: white;
+  text-decoration: none; /* no underline */
 }
+
+//app-root {
+//  display: block;
+//  height: 100%;
+//}

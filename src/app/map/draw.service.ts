@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import * as d3 from 'd3';
 import {JSONMap} from './map';
-import {AreaService} from '../area.service';
+import {AreaService} from '../services/area.service';
 
 @Injectable({
   providedIn: 'root'

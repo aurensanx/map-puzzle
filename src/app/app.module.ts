@@ -2,21 +2,30 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {MapComponent} from './map/map.component';
-import {AreaService} from './area.service';
-// import { GeoMapComponent } from './geo-map/geo-map.component';
+import {AreaService} from './services/area.service';
+import {GeoMapComponent} from './components/map/geo-map/geo-map.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {HomeComponent} from './components/home/home.component';
+import {MapComponent} from "./components/map/map.component";
+import {HttpClientModule} from "@angular/common/http";
+import { SvgMapComponent } from './components/map/svg-map/svg-map.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    // GeoMapComponent
+    GeoMapComponent,
+    HomeComponent,
+    SvgMapComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [AreaService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
 }

@@ -1,13 +1,21 @@
-<div class="container">
-  <div class="content">
-    <div *ngIf="areaService.map.length > 0" class="title">{{areaService.currentMapArea.n}}</div>
-    <div *ngIf="areaService.map.length === 0" class="title">Felicidades!!!</div>
-    <app-map [dataPath]="map"></app-map>
-  </div>
 
-</div>
+<router-outlet></router-outlet>
 
-<!--<app-geo-map></app-geo-map>-->
+<!--<div class="container">-->
+<!--  <div class="content">-->
+<!--    <div *ngIf="areaService.map.length > 0" class="title">{{areaService.currentMapArea.n}}</div>-->
+<!--    <div *ngIf="areaService.map.length === 0" class="title">Felicidades!!!</div>-->
+<!--    <app-map [dataPath]="map"></app-map>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div class="container">-->
+<!--  <div class="content">-->
+<!--    <h1 *ngIf="areaService.features.length > 0" class="title">{{areaService.currentFeature.properties.provincia}}</h1>-->
+<!--&lt;!&ndash;    <h1 *ngIf="areaService.map.length === 0" class="title">Felicidades!!!</h1>&ndash;&gt;-->
+<!--    <app-geo-map [map]="map"></app-geo-map>-->
+<!--  </div>-->
+<!--</div>-->
 
 
 

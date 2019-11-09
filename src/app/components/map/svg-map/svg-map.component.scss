@@ -1,0 +1,21 @@
+#rootSVG {
+  width: 100%;
+  height: 100%;
+  //width: 100%;
+  //background-color: lightblue;
+}
+
+.area {
+  fill: white;
+  stroke: #a9a9a9;
+  stroke-width: 1;
+
+  &:hover {
+    // FIXME
+    fill: orange;
+    fill-opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+
