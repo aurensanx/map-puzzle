@@ -1,0 +1,12 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  button {
+    margin: 1rem 1rem 1rem 0;
+    mat-icon {
+      font-size: 3rem;
+    }
+  }
+}
