@@ -4,9 +4,21 @@ main {
   font-weight: bold;
 }
 
-.container {
-  display: flex;
-  justify-content: space-evenly;
+//.flex-container {
+//  display: flex;
+//  justify-content: space-evenly;
+//  align-items: center;
+//  height: 100%;
+//  flex-wrap: wrap;
+//  .item {
+//  }
+//}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
   align-items: center;
   height: 100%;
 }

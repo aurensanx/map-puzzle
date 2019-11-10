@@ -12,7 +12,8 @@ interface MenuItem {
 })
 export class HomeComponent implements OnInit {
 
-  maps: MenuItem[] = [{name: 'USA', id: 'usa'}, {name: 'España', id: 'spain'}, {name: 'Aragón', id: 'aragon'}];
+  maps: MenuItem[] = [{name: 'USA', id: 'usa'}, {name: 'Europa', id: 'europe'}
+    , {name: 'España', id: 'spain'}, {name: 'Aragón', id: 'aragon'}];
 
   constructor() {
   }
