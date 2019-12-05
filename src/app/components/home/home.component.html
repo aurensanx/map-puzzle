@@ -1,5 +1,5 @@
 <main class="grid-container">
-  <div *ngFor="let map of maps"><a [routerLink]="['/map',map.id]">{{map.name}}</a>
+  <div [ngClass]="'item-'+i" *ngFor="let map of maps; let i = index"><a [routerLink]="['/map',map.id]">{{map.name}}</a>
   </div>
 </main>
 

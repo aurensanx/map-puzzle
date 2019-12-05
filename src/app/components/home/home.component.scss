@@ -14,11 +14,35 @@ main {
 //  }
 //}
 
+//.grid-container {
+//  display: grid;
+//  grid-template-columns: 1fr 1fr 1fr;
+//  grid-template-rows: 1fr 1fr;
+//  justify-items: center;
+//  align-items: center;
+//  height: 100%;
+//}
+
+
+
+@for $i from 0 through 4 {
+  .item-#{$i} {
+    grid-area: item-#{$i};
+  }
+}
+
+
 .grid-container {
+  //padding: 10% 0 10% 0;
+  height: 100%;
+  //width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  height: 100%;
+  grid-template-areas:
+    "item-0 . item-1"
+    ". item-2 ."
+    "item-3 . item-4";
 }

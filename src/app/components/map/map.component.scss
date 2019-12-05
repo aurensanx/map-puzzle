@@ -26,8 +26,9 @@
   stroke-width: 1;
 
   &:hover:not(.correct):not(.wrong) {
-    fill: orange;
-    fill-opacity: 0.5;
+    //fill: #FFBD33;
+    fill: #fdbe61;
+    //fill-opacity: 0.5;
     cursor: pointer;
   }
 
