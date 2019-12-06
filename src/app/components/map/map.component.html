@@ -4,7 +4,7 @@
     <h1 *ngIf="mapService.currentArea">{{mapService.currentArea.n}}</h1>
     <svg id="rootSVG" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet"></svg>
   </div>
-  <app-map-right-bar></app-map-right-bar>
+  <app-map-right-bar [score]="mapService.score"></app-map-right-bar>
 </div>
 
 

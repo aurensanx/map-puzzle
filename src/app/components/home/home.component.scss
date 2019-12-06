@@ -25,7 +25,7 @@ main {
 
 
 
-@for $i from 0 through 4 {
+@for $i from 0 through 7 {
   .item-#{$i} {
     grid-area: item-#{$i};
   }
@@ -42,7 +42,7 @@ main {
   justify-items: center;
   align-items: center;
   grid-template-areas:
-    "item-0 . item-1"
-    ". item-2 ."
-    "item-3 . item-4";
+    "item-0 item-1 item-2"
+    "item-3 . item-4"
+    "item-5 item-6 item-7";
 }
